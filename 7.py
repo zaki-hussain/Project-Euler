@@ -22,3 +22,5 @@ while prime < max:
         prime += 1
 
 print(current)
+
+#104743
