@@ -17,4 +17,4 @@ answer = int(m * n * (m**4 - n**4) / 4)
 
 print(answer)
 
-#
+#31875000
