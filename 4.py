@@ -1,7 +1,7 @@
-#Problem 4
-#Largest Palindrome Product
-#A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is: 9009 = 91 × 99
-#Find the largest palindrome made from the product of two 3-digit numbers.
+# Problem 4
+# Largest Palindrome Product
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is: 9009 = 91 × 99
+# Find the largest palindrome made from the product of two 3-digit numbers.
 
 digits = 3
 end = 10 ** digits - 1
@@ -26,4 +26,4 @@ for x in range (start, end, 11):
 
 print(answer)
 
-#906609
+# 906609

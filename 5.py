@@ -1,11 +1,11 @@
-#2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
-#What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+# 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+# What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 import math
 
 largest = 20
 
-#Note: this will only work if the largest number is under 27 as it doesn't cosider cube numbers, except for 8
+# Note: this will only work if the largest number is under 27 as it doesn't cosider cube numbers, except for 8
 
 answer = 2
 
@@ -26,4 +26,4 @@ for i in range (3,largest+1):
 
 print(answer)
 
-#232792560
+# 232792560
