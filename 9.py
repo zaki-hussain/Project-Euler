@@ -4,16 +4,16 @@
 #There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 #Find the product abc.
 
-#m(m+n)=1000 where m and n are odd
-#Factors of 1000 are 2^3 * 5^3 so:
-m = 25
-n = 15
+#m(m+n)=500
+#500 = 2^2 × 5^3, so:
+m = 20
+n = 5
 
 #a = m * n
 #b = (m**2 - n**2) / 2
 #c = (m**2 + n**2) / 2
 
-answer = int(m * n * (m**4 - n**4) / 4)
+answer = 2 * m * n * (m**4 - n**4)
 
 print(answer)
 
