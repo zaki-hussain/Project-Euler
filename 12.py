@@ -28,7 +28,7 @@ def primeFactors(number):
             number /= 2
         else:
             break
-    for i in range(3, math.ceil(math.sqrt(number)) + 1, 2):
+    for i in range(3, math.ceil(math.sqrt(original)) + 1, 2):
         while True:
             if number % i == 0:
                 factors.append(i)
