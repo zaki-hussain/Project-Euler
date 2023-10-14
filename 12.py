@@ -46,7 +46,7 @@ while True:
     allFactors = []
 
     for j in range(len(factors)+1):
-        for item in list(itertools.combinations(factors,j)):
+        for item in list(itertools.combinations(factors, j)):
             product = 1
             for number in item:
                 product *= number
