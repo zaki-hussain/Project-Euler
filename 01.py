@@ -12,6 +12,7 @@ def sumOfMultiples(factor):
     return x * (x + 1) * factor / 2 
 
 answer = int(sumOfMultiples(factor1) + sumOfMultiples(factor2) - sumOfMultiples(factor1 * factor2))
+# Assumes that factor1 and factor2 are prime
 
 print(answer)
 
