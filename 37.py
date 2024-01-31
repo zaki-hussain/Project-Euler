@@ -5,10 +5,6 @@
 # NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 import math
-primes = (1, 2, 3, 5, 7)
-
-truncPrimes = set()
-count = 0
 
 def checkPrime(number):
     if number == 1:
@@ -23,27 +19,23 @@ def checkPrime(number):
             return False
     return True
 
-def addDigit(number):
-    global sum
-    global count
-    for prime in primes:
-        joined = str(prime)+str(number)
-        for x in range(len(joined)):
-            a = int(joined[:(x+1)])
-            valid = True
-            if not checkPrime(int(joined[:(x+1)])):
-                valid = False
-                break
-        if valid:
-            truncPrimes.add(int(joined))
-            count += 1
-            addDigit(joined)
-        
+def check(number):
+    n = str(number)
+    for x in range(len(n)):
+        if not (checkPrime(int(n[:(x+1)])) and checkPrime(int(n[x:]))):
+            return False
+    return True
 
+sum = 0
+count = 0
+i = 11
 
-for prime in primes:
-    for prime in primes:
-        addDigit(prime)
+while count < 11:
+    if check(i):
+        sum += i
+        count += 1
+    i += 1
 
-print(truncPrimes, count)
-print(len(truncPrimes))
+print(sum)
+
+# 748317
