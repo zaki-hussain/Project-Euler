@@ -19,8 +19,7 @@ def checkPrime(number):
 
 
 for i in range(9, 0, -1):
-    a = list(permutations(range(i, 0, -1), i))
-    for combo in a:
+    for combo in permutations(range(i, 0, -1), i):
         b = int("".join(map(str, combo)))
         if checkPrime(b):
             answer = b
