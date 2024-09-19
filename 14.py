@@ -18,9 +18,13 @@ def nextTerm(n):
         return test[n]
     except KeyError:
         if n % 2 == 0:
-            return int(n / 2)
+            temp = int(n / 2)
+            test[n] = temp
+            return temp
         else:
-            return 3 * n + 1
+            temp = 3 * n + 1
+            test[n] = temp
+            return temp
 
 test = {}
 
